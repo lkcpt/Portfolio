@@ -86,6 +86,32 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+/* Experience reveal */
+
+let asuran = document.getElementById("asuran-btn");
+let flometriq = document.getElementById("flometriq-btn");
+
+let asuran_content = document.getElementById("asuran");
+let flometriq_content = document.getElementById("flometriq");
+
+asuran.addEventListener("click", () => {
+  asuran_content.style.transform = "translateX(37%)";
+  flometriq_content.style.transform = "translateX(200%)";
+  asuran.classList.add("active");
+  flometriq.classList.remove("active");
+  asuran_content.style.transitionDelay = "0.5s";
+  flometriq_content.style.transitionDelay = "0s";
+});
+
+flometriq.addEventListener("click", () => {
+  asuran_content.style.transform = "translateX(200%)";
+  flometriq_content.style.transform = "translateX(37%)";
+  asuran.classList.remove("active");
+  flometriq.classList.add("active");
+  asuran_content.style.transitionDelay = "0s";
+  flometriq_content.style.transitionDelay = "0.5s";
+});
+
 /* Scroll Reveal */
 
 const srtop = ScrollReveal({
@@ -120,16 +146,15 @@ srtop.reveal(".education .timeline .container", { interval: 400 });
 
 /* Experience */
 srtop.reveal(".experience--container .title", { delay: 200 });
-srtop.reveal(".experience--container .exp-nav", { delay: 300 });
+srtop.reveal(".experience--container .btn-box", { delay: 300 });
 
-srtop.reveal(".experience--container .desc .company ", { delay: 300 });
-srtop.reveal(".experience--container .desc .company .role", { delay: 400 });
-srtop.reveal(".experience--container .desc .company .c-name", { delay: 500 });
-srtop.reveal(".experience--container .desc .company .details", { delay: 600 });
-srtop.reveal(".experience--container .desc .company .description", {
+srtop.reveal(".experience--container .items ", { delay: 300 });
+srtop.reveal(".experience--container .items .company .role", { delay: 400 });
+srtop.reveal(".experience--container .items .company .c-name", { delay: 500 });
+srtop.reveal(".experience--container .items .company .details", { delay: 600 });
+srtop.reveal(".experience--container .items .company .description", {
   delay: 700,
 });
-srtop.reveal(".experience--container .desc .company .c-website", {
+srtop.reveal(".experience--container .items .company .c-website", {
   delay: 800,
 });
-
