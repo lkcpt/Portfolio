@@ -1,0 +1,138 @@
+@use "../abstract/functions" as func;
+
+/* About Page */
+
+.about{
+    background-color: func.theme-colors("secondary") ;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;    
+    &--container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height:100%;
+        width:100%;
+        
+        &--title{
+            h1{
+                font-size:3rem;
+                margin-top:1rem;
+                padding:1rem;
+                color:func.theme-colors("dark");
+                letter-spacing: 10px;
+                .color{
+                    color:func.theme-colors("title1");
+                }
+            }
+        }
+        &--contents{
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-flow:row wrap;
+            height:100%;
+            width:100%;
+            z-index:10;
+            .img{
+                display: flex;
+                flex:1 1 30%;
+                align-items: center;
+                justify-content: center;
+                .blend{
+                    background-color: func.theme-colors("black");
+                    border-radius:20px;
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                    animation:float 3s ease-out infinite;
+                    margin:0; 
+                    img{
+                        background:linear-gradient(45deg,aliceblue,#003262);
+                        border-radius: 20px;
+                        width:20vw;
+                        mix-blend-mode: luminosity;
+                        cursor:pointer;
+                        transition: 0.6s;
+                        &:hover{
+                            mix-blend-mode: normal;
+                            transition:0.6s;
+                        }
+                    }
+                }
+            }
+            .text{
+                height:100%;
+                padding:2rem 4rem;
+                display:flex;
+                flex-direction: column;
+                flex:1 1 70%;
+                .bio-head{
+                    color:func.theme-colors("title1");
+                    font-size:1.5rem;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    .fl{
+                        font-size:2.5rem;
+                        color:func.theme-colors("dark");
+                    }
+                }
+                .bio{
+                    padding-top:0.5rem;
+                    font-size:1rem;
+                    text-align: justify;
+                    text-indent: 8rem;
+                    color:func.theme-colors("black");
+                    line-height:2;
+                    .bold{
+                        color:func.theme-colors("dark");
+                        font-weight:bold;
+                    }
+                }
+                .personal{
+                    display:flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    height:38%;
+                    margin-top:1.5rem;
+                    .col1{
+                        width:60%;
+                        height:100%;
+                        line-height:2;
+                        padding:1rem;
+                        .details{
+                            list-style-type: none;
+                            .head{
+                                color:func.theme-colors("dark");
+                                font-weight: bold;
+                            }
+                            margin-bottom:1.5rem;
+                        }
+                    }
+                    .col2{
+                        width:40%;
+                        height:100%;
+                        border-left:2px solid func.theme-colors("dark");
+                        a{
+                            margin:1.5rem auto;
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            z-index:100;
+                            font-size:1.5rem;
+                            width:70%;
+                            border-radius:1px;
+                            .desc{  
+                                font-size:0.875rem;
+                                color:func.theme-colors("dark");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* About Page End */

@@ -1,0 +1,12 @@
+@use "variables" as var;
+@function theme-colors($color:"primary"){
+    @return map-get(var.$theme-colors, $color );
+}
+
+@function btn-colors($color:"primary"){
+    @return map-get(var.$btn-colors,$color);
+}
+
+@function anime-colors($color:"color-1"){
+    @return map-get(var.$anime-colors,$color);
+}

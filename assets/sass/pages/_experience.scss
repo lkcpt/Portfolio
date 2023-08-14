@@ -1,0 +1,106 @@
+@use "../abstract/functions" as func;
+
+/* Experience Page */
+
+.experience{
+     background-color: func.theme-colors("primary");
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    &--container{
+         display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        .title{
+            font-size:3rem;
+            margin-top:1rem;
+            padding:1rem;
+            color:func.theme-colors("dark");
+            letter-spacing: 10px;
+            .color{
+                color:func.theme-colors("title1");
+            }
+        } 
+        .desc{
+            max-width:58%;
+            
+            .swiper-slide{
+                width:100%;
+                height: 100%;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                padding:4rem;
+                z-index:10;
+                text-align: left;
+                .contents{
+                    background-color:func.theme-colors("primary") ;
+                    padding:3rem;
+                    // border:8px solid var.$dark-font-color;
+                    border-radius: 20px;
+                    line-height:2;
+                    overflow: auto;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+                    cursor:grab;
+                    &:active{
+                        cursor:grabbing;
+                    }
+                    .role{
+                        font-size:2.5rem;
+                        color:func.theme-colors("title1");
+                        animation:role 3s 1; 
+                        text-shadow:1px 1px 2px black;
+                    }
+                    .c-name{
+                        font-size:1.8rem;
+                        color: func.theme-colors("dark");
+                        animation:role 3.5s 1; 
+                        
+                    }
+                    .details{
+                        display:flex;
+                        justify-content: space-between;
+                        max-width:50%;
+                        font-size: 1.1rem;
+                        animation:role 4s 1; 
+                        i{
+                            color: func.theme-colors("title2");
+                        }
+                    }
+                    .description{
+                        font-size: 1.1rem;
+                        ul{
+                            list-style-type: square;
+                            list-style-position: inside;
+                            margin-left:3rem;
+                        }
+                        animation:role 4.5s 1; 
+                    }
+                    .c-website{
+                        padding-top:0.5rem;
+                        .btn-primary{
+                            padding:0.5rem;
+                        }
+                        animation:role 5s 1; 
+                    }
+                    
+                }   
+                .flometriq{
+                    background-image: url('../img/experience/flometriq.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .asuran{
+                    background-image: url('../img/experience/asuran.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                } 
+            }    
+        }
+    }
+}
+
+/* Experience Page End */

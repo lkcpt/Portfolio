@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Handlee&family=Pacifico&family=Poppins:wght@100;200;300;400;500&display=swap');
+
+
+//base 
+@import "./base/reset";
+@import "./base/global";
+
+//components
+@import "./components/buttons";
+
+//Layouts
+@import "./layout/header";
+@import "./layout/background_elements";
+
+//Pages
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/education";
+@import "./pages/skills";
+@import "./pages/experience";
+@import "./pages/projects";
+@import "./pages/contact";
+
+//Utilities
+@import "./utilities/animation";

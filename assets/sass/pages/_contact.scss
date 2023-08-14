@@ -1,0 +1,33 @@
+@use "../abstract/functions" as func;
+
+/* Contact Page */
+
+.contact{
+    background-color: func.theme-colors("primary");
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    &--container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height:100%;
+        width:100%;
+        &--title{
+            h1{
+                font-size:3rem;
+                margin-top:1rem;
+                padding:1rem;
+                color:func.theme-colors("dark");
+                letter-spacing: 10px;
+                .color{
+                    color:func.theme-colors("title1");
+                }
+            }
+        }
+    }
+}
+
+/* Contact Page End */

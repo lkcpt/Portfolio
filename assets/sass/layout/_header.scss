@@ -1,0 +1,57 @@
+@use "../abstract/functions" as func;
+/* Header */
+
+.header{
+    padding:1rem 10rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;  
+    flex-wrap: wrap;
+    &--logo{
+        font-size:1.5rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:20%;
+        a{
+            color:func.theme-colors("black");
+            text-transform: capitalize;
+            cursor:default;
+            font-weight: bold;
+        }
+        img{
+            width:50px;
+            margin-right:0.2rem;
+        }
+    }
+    &--menu{
+        display:flex;
+        gap:1rem;
+        list-style-type: none;
+        font-size:0.875rem;
+        &__items>a{
+            color:func.theme-colors("black");
+            transition:0.2s;
+            padding:0.5rem;
+            &:hover,&.active{
+                font-size: 0.95rem;
+                color:func.theme-colors("dark");
+                transition:0.2s;
+                font-weight: bold;
+            }
+        }
+    }
+    &--btn{
+        display:none;
+    }
+    &-fixed{
+        position:sticky;
+        top:0;
+        width:100%;
+        z-index:100;
+        background-color:func.theme-colors("primary");
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+}
+
+/* Header End */

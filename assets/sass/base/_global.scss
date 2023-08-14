@@ -1,0 +1,21 @@
+
+/* Global Utilities */
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.color-anime{
+    animation:color-change 10s infinite;
+    transition:0.5s;
+}
+
+main{
+    width:100%;
+    section{
+        min-height:100vh;
+        padding:1rem 10rem;
+    }
+}
+
+/* Global Utilities End */
