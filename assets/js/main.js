@@ -68,24 +68,6 @@ box.addEventListener("mouseleave", (e) => {
   circle.style.transform = "rotateY(0deg) rotateX(0deg)";
 });
 
-/* Experience Section Swiper Initialize*/
-
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  keyboard: {
-    enabled: true,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
 /* Experience reveal */
 
 let asuran = document.getElementById("asuran-btn");
@@ -143,6 +125,41 @@ srtop.reveal(".about--container--contents .personal .col2 ", { delay: 500 });
 srtop.reveal(".education .title", { delay: 200 });
 srtop.reveal(".education .timeline", { delay: 400 });
 srtop.reveal(".education .timeline .container", { interval: 400 });
+
+/* Skills */
+srtop.reveal(".skills--container .title", { delay: 200 });
+srtop.reveal(".skills--container q", { delay: 300 });
+
+srtop.reveal(".skills--container .skill-holder .technical", { delay: 400 });
+
+srtop.reveal(".skills--container .skill-holder .technical .frontend", {
+  delay: 500,
+});
+srtop.reveal(
+  ".skills--container .skill-holder .technical .frontend .skills-data",
+  { interval: 300 }
+);
+
+srtop.reveal(".skills--container .skill-holder .technical .backend", {
+  delay: 500,
+});
+srtop.reveal(
+  ".skills--container .skill-holder .technical .backend .skills-data",
+  { interval: 300 }
+);
+
+srtop.reveal(".skills--container .skill-holder .interpersonal", { delay: 400 });
+srtop.reveal(".skills--container .skill-holder .interpersonal .heading", {
+  delay: 500,
+});
+srtop.reveal(
+  ".skills--container .skill-holder .interpersonal .container .col-1 ",
+  { delay: 600 }
+);
+srtop.reveal(
+  ".skills--container .skill-holder .interpersonal .container .col-2 ",
+  { delay: 700 }
+);
 
 /* Experience */
 srtop.reveal(".experience--container .title", { delay: 200 });

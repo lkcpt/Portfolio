@@ -1,4 +1,3 @@
-@use "../abstract/variables" as var;
 @use "../abstract/functions" as func;
 /* General Reset */
 
@@ -6,7 +5,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family:var.$font-family-popins;
+    font-family:func.font-styles("popins");
 }
 html{
     scroll-behavior: smooth;   

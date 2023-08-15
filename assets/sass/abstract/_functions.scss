@@ -10,3 +10,7 @@
 @function anime-colors($color:"color-1"){
     @return map-get(var.$anime-colors,$color);
 }
+
+@function font-styles($style:"popins"){
+    @return map-get(var.$font-style,$style);
+}
