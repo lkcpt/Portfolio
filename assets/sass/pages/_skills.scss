@@ -37,6 +37,7 @@
             display:flex;
             justify-content: space-evenly;
             align-items: center;
+            flex-wrap: wrap;
             gap:2rem;
             z-index:1;
             .skill-set{
@@ -84,7 +85,7 @@
                         .java{
                             background:func.skill-colors("bar") linear-gradient(to right, transparent 50%,func.skill-colors("color-2") 0);
                         }
-                        .python{
+                        .mysql{
                             background:func.skill-colors("bar") linear-gradient(to right, transparent 50%,func.skill-colors("color-3") 0);
                         }
                         .communicate{
@@ -185,13 +186,14 @@
                             &.cpp::before{
                                 background-color: func.skill-colors("color-1");
                                 transform:rotate(calc(((80 - 50) * 0.01turn )));
-                            }&.java::before{
+                            }
+                            &.java::before{
                                 background-color: func.skill-colors("color-2");
                                 transform:rotate(calc(((75 - 50) * 0.01turn )));
                             }
-                            &.python::before{
-                                background-color: func.skill-colors("bar");
-                                transform:rotate(calc(((100 - 0) * 0.01turn )));
+                            &.mysql::before{
+                                background-color: func.skill-colors("color-3");
+                                transform:rotate(calc(((65 - 50) * 0.01turn )));
                             }
                             &.communicate::before{
                                 background-color: func.skill-colors("color-1");
