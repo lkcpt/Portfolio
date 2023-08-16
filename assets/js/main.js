@@ -127,39 +127,21 @@ srtop.reveal(".education .timeline", { delay: 400 });
 srtop.reveal(".education .timeline .container", { interval: 400 });
 
 /* Skills */
-srtop.reveal(".skills--container .title", { delay: 200 });
-srtop.reveal(".skills--container q", { delay: 300 });
-
-srtop.reveal(".skills--container .skill-holder .technical", { delay: 400 });
-
-srtop.reveal(".skills--container .skill-holder .technical .frontend", {
-  delay: 500,
+srtop.reveal(".skills--container .title-holder .title", { delay: 200 });
+srtop.reveal(".skills--container .title-holder q", { delay: 300 });
+srtop.reveal(".skills--container .skill-holder .skill-set", { delay: 400 });
+srtop.reveal(".skills--container .skill-holder .skill-set .circle", {
+  delay: 200,
 });
-srtop.reveal(
-  ".skills--container .skill-holder .technical .frontend .skills-data",
-  { interval: 300 }
-);
-
-srtop.reveal(".skills--container .skill-holder .technical .backend", {
-  delay: 500,
+srtop.reveal(".skills--container .skill-holder .frontend .circle", {
+  interval: 300,
 });
-srtop.reveal(
-  ".skills--container .skill-holder .technical .backend .skills-data",
-  { interval: 300 }
-);
-
-srtop.reveal(".skills--container .skill-holder .interpersonal", { delay: 400 });
-srtop.reveal(".skills--container .skill-holder .interpersonal .heading", {
-  delay: 500,
+srtop.reveal(".skills--container .skill-holder .backend .circle", {
+  interval: 300,
 });
-srtop.reveal(
-  ".skills--container .skill-holder .interpersonal .container .col-1 ",
-  { delay: 600 }
-);
-srtop.reveal(
-  ".skills--container .skill-holder .interpersonal .container .col-2 ",
-  { delay: 700 }
-);
+srtop.reveal(".skills--container .skill-holder .professional .circle", {
+  interval: 300,
+});
 
 /* Experience */
 srtop.reveal(".experience--container .title", { delay: 200 });

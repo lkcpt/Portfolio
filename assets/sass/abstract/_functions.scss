@@ -14,3 +14,7 @@
 @function font-styles($style:"popins"){
     @return map-get(var.$font-style,$style);
 }
+
+@function skill-colors($color:"bar"){
+    @return map-get(var.$skill-colors,$color);
+}
