@@ -7,8 +7,6 @@
     <title>Lokesh Kanna - Portfolio</title>
     <!-- website icon -->
     <link rel="icon" href="./assets/img/logo.png">
-    <!-- Swiper -->
-    <link rel="stylesheet" href="assets/css/swiper.min.css" />
     <!-- Font awesome icons -->
     <link rel="stylesheet" href="assets/fontawesome-icons/css/all.min.css">
     <!-- Stylesheet -->
@@ -20,13 +18,25 @@
 
     <!-- ========== Start Header ========== -->
     <header class="header header-fixed">
+        <div class="clock">
+            <div>
+                <span id="hour">00</span>
+                <span class="text"> : </span>
+            </div>
+            <div>
+                <span id="minutes">00</span>
+                <span class="text"> : </span>
+            </div>
+            <div>
+                <span id="seconds">00</span>
+            </div>
+            <div>
+                <span id="ampm">am</span>
+            </div>
+        </div>
         <!-- Title -->
         <div class="header--logo"><img src="./assets/img/logo.png" alt="logo"><a href="#" class="nowrap">Lokesh
-                Kanna
-                <span class="color-anime">{
-                    Portfolio
-                    }</span>
-            </a></div>
+                Kanna<span class="color-anime"> { Portfolio } </span></a></div>
         <!-- Menu -->
         <ul class="header--menu">
             <li class="header--menu__items"><a href="#home" class="nowrap active"><i class="fa fa-home"></i>&nbsp;
@@ -42,7 +52,7 @@
                     Experience</a></li>
             <li class="header--menu__items"><a href="#projects" class="nowrap"><i
                         class="fa fa-project-diagram"></i>&nbsp; Projects</a></li>
-            <li><a href="#contact" class="btn-primary nowrap"><i class="fa fa-address-card"></i>&nbsp; Contact me</a>
+            <li><a href="#contact" class="btn-primary nowrap"><i class="fa-solid fa-headset"></i>&nbsp; Contact me</a>
             </li>
         </ul>
         <!-- Toggle Button -->
@@ -342,12 +352,12 @@
                                 <!-- C -->
                                 <div class="progress c">
                                     <h3>80<span>%</span></h3>
-                                    <h4 class="nowrap"> C</h4>
+                                    <h4 class="nowrap"><img src="assets/img/skills/c.png" alt="c">C Programming</h4>
                                 </div>
                                 <!-- C++ -->
                                 <div class="progress cpp">
                                     <h3>80<span>%</span></h3>
-                                    <h4 class="nowrap">C++</h4>
+                                    <h4 class="nowrap"><img src="assets/img/skills/cpp.png" alt="cpp">C++</h4>
                                 </div>
                             </div>
 
@@ -378,12 +388,13 @@
                                 <!-- Communicate -->
                                 <div class="progress communicate">
                                     <h3>85<span>%</span></h3>
-                                    <h4 class="nowrap">Communication</h4>
+                                    <h4 class="nowrap"><i class="fa-solid fa-headset"></i> Communication</h4>
                                 </div>
                                 <!-- Flexible -->
                                 <div class="progress flexible">
                                     <h3>75<span>%</span></h3>
-                                    <h4 class="nowrap">Flexibility</h4>
+                                    <h4 class="nowrap"><img src="assets/img/skills/flexible.png"
+                                            alt="flexible">Flexibility</h4>
                                 </div>
                             </div>
 
@@ -391,12 +402,12 @@
                                 <!-- Team Work -->
                                 <div class="progress teamwork">
                                     <h3>90<span>%</span></h3>
-                                    <h4 class="nowrap">Team Work</h4>
+                                    <h4 class="nowrap"><i class="fa-solid fa-people-group"></i>Team Work</h4>
                                 </div>
                                 <!-- Creativity -->
                                 <div class="progress creativity">
                                     <h3>80<span>%</span></h3>
-                                    <h4 class="nowrap">Creativity</h4>
+                                    <h4 class="nowrap"><i class="fa-regular fa-lightbulb"></i> Creativity</h4>
                                 </div>
                             </div>
 
@@ -533,10 +544,42 @@
                 <div class="circle-3"></div>
                 <div class="circle-4"></div>
             </div>
-            <div class="projects--container">
-                <div class="projects--container--title">
-                    <h1 class="nowrap">MY <span class="color">PROJECTS</span>
-                    </h1>
+            <div class="projects--title">
+                <h1 class="nowrap title">MY <span class="color">PROJECTS</span>
+                </h1>
+            </div>
+            <div class="cards">
+                <div class="project-cards">
+                    <div class="project-img">
+                        <img src="assets/img/projects/online-voting.jpg" alt="online voting system">
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-head"><span>O</span>nline <span>V</span>oting <span>S</span>ystem</h4>
+                        <p class="abstract">In this project, I propose the development of an Online Voting System using
+                            Java JSP,
+                            Servlet, and MySQL Database</p>
+                        <div class="category">Category : <span>Web Developement</span></div>
+                        <div class="card-btn">
+                            <a href="#" class="btn-info">View Code</a>
+                            <a href="#" class="btn-info">Visit site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-cards">
+                    <div class="project-img">
+                        <img src="assets/img/projects/ecommerce.jpg" alt="e-commerce website">
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-head"><span>E</span> - <span>C</span>ommerce <span>W</span>ebsite</h4>
+                        <p class="abstract">In this project, I developed an e-Commerce Website using Java JSP, Servlet,
+                            and MySQL
+                            Database</p>
+                        <div class="category">Category : <span>Web Developement</span></div>
+                        <div class="card-btn">
+                            <a href="#" class="btn-info">View Code</a>
+                            <a href="#" class="btn-info">Visit site</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -583,18 +626,12 @@
     </footer>
     <!-- ========== End footer ========== -->
 
-    <!-- JQuery JS -->
-    <script src="assets/js/jquery.min.js"></script>
-
     <!-- Particles JS -->
     <script src="assets/js/particles/particles.min.js"></script>
     <script src="assets/js/particles/app.js"></script>
 
     <!-- Scroll Reveal JS -->
     <script src="assets/js/scrollreveal.min.js"></script>
-
-    <!-- swiper JS -->
-    <script src="assets/js/swiper.min.js"></script>
 
     <!-- Typed JS -->
     <script src="assets/js/typed.min.js"></script>

@@ -8,22 +8,65 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    &--container{
+    flex-direction: column;
+    &--title{
+        .title{
+            font-size:3rem;
+            padding:1rem;
+            color:func.theme-colors("dark");
+            letter-spacing: 10px;
+            .color{
+                color:func.theme-colors("title1");
+            }
+        }
+    }
+    .cards{
         display:flex;
-        flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        height:100%;
+        flex-wrap:wrap;
         width:100%;
-        &--title{
-            h1{
-                font-size:3rem;
-                margin-top:1rem;
-                padding:1rem;
-                color:func.theme-colors("dark");
-                letter-spacing: 10px;
-                .color{
-                    color:func.theme-colors("title1");
+        z-index:1;
+        .project-cards{
+            margin:3rem 5rem;
+            background-color: func.theme-colors("primary");
+            border-radius:10px;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+            .project-img{
+                img{
+                    width:400px;
+                }
+            }
+            .project-content{
+                max-width:400px;
+                padding:1.5rem;
+                h4{
+                    font-size:1.5rem;
+                    margin-bottom:1rem;
+                    color:func.theme-colors("dark");
+                    span{
+                        color:func.theme-colors("title1"); 
+                        font-size: 1.7rem;
+                    }
+                }
+                .abstract{  
+                    text-align: justify;
+                    margin-bottom:1rem;
+                }
+                .category{
+                    margin-bottom:1.5rem;
+                    font-size:1rem;
+                    font-weight:bold;
+                    color:func.theme-colors("dark");
+                    span{
+                        font-weight:normal;
+                        color:func.theme-colors("black")
+                    }
+                }
+                .card-btn{
+                    display:flex;
+                    justify-content: space-evenly;
                 }
             }
         }

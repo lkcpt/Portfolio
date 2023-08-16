@@ -2,11 +2,31 @@
 /* Header */
 
 .header{
-    padding:1rem 10rem;
+    padding:1rem 12rem;
     display:flex;
     justify-content: space-between;
     align-items: center;  
     flex-wrap: wrap;
+    position:relative;
+    .clock{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:absolute;
+        right:1.5%;
+        gap:0.2rem;
+        #hour{
+            color:func.theme-colors("title1");
+        }
+        span{
+            color:func.theme-colors("dark");
+            font-size:1rem;
+            font-weight: bolder;
+        }
+        #ampm{
+            color:func.theme-colors("title2");
+        }
+    }
     &--logo{
         font-size:1.5rem;
         display:flex;
@@ -16,7 +36,7 @@
         a{
             color:func.theme-colors("black");
             text-transform: capitalize;
-            cursor:default;
+            
             font-weight: bold;
         }
         img{

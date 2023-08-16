@@ -57,6 +57,18 @@
             font-weight: bold;
         }
     }
+    &-info{
+        @extend .btn;
+        background-color: func.btn-colors("info");
+        color:func.btn-colors("text");
+        &:hover{
+            outline:1px solid func.btn-colors("info");
+            background-color:transparent;
+            color:func.btn-colors("info");
+            transition:0.3s;
+            font-weight: bold;
+        }
+    }
 }
 
 /* Buttons End */

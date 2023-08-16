@@ -23,17 +23,37 @@ function showActiveMenu() {
 
 showActiveMenu();
 
-/* Smooth Scroll */
-$('a[href*="#"]').on("click", function (e) {
-  e.preventDefault();
-  $("html, body").animate(
-    {
-      scrollTop: $($(this).attr("href")).offset().top - 50,
-    },
-    400,
-    "linear"
-  );
-});
+/* Clock*/
+const hourEl = document.getElementById("hour");
+const minuteEl = document.getElementById("minutes");
+const secondEl = document.getElementById("seconds");
+const ampmEl = document.getElementById("ampm");
+
+function updateClock() {
+  let h = new Date().getHours();
+  let m = new Date().getMinutes();
+  let s = new Date().getSeconds();
+  let ampm = "am";
+
+  if (h > 12) {
+    h = h - 12;
+    ampm = "pm";
+  }
+
+  h = h < 10 ? "0" + h : h;
+  m = m < 10 ? "0" + m : m;
+  s = s < 10 ? "0" + s : s;
+
+  hourEl.innerText = h;
+  minuteEl.innerText = m;
+  secondEl.innerText = s;
+  ampmEl.innerText = ampm;
+  setTimeout(() => {
+    updateClock();
+  }, 1000);
+}
+
+updateClock();
 
 /* Auto type Animation */
 let typed = new Typed(".auto-type", {
@@ -157,3 +177,13 @@ srtop.reveal(".experience--container .items .company .description", {
 srtop.reveal(".experience--container .items .company .c-website", {
   delay: 800,
 });
+
+/* Projects */
+
+srtop.reveal(".projects--title", { delay: 200 });
+srtop.reveal(".projects .cards .project-cards", { delay: 300 });
+srtop.reveal(".projects .cards .project-cards .project-img", { delay: 400 });
+srtop.reveal(".projects .cards .project-cards .project-head", { delay: 500 });
+srtop.reveal(".projects .cards .project-cards .abstract", { delay: 600 });
+srtop.reveal(".projects .cards .project-cards .category", { delay: 700 });
+srtop.reveal(".projects .cards .project-cards .card-btn", { delay: 800 });
