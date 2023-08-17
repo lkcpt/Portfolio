@@ -35,13 +35,13 @@
             @include mixin.responsive(xs){
                 flex:1 1 20rem;
                 width:100%;
-                margin-top:3rem;
+                margin-top:1rem;
             }
             &__title{
                 font-size:3.5rem;
                 color: func.theme-colors("dark");
                 @include mixin.responsive(xs){
-                    font-size:2rem; 
+                    font-size:1.5rem; 
                 }
                 .name{
                     display:block;
@@ -54,7 +54,7 @@
                 font-size: 1.75rem;
                 color:func.theme-colors("dark");
                 @include mixin.responsive(xs){
-                    font-size:1.1rem; 
+                    font-size:0.875rem; 
                 }
                 .auto-type{
                     color:func.theme-colors("title2");
@@ -64,9 +64,9 @@
                 margin:1.5rem 0 3rem 0;
                 display:block;
                 color:func.theme-colors("dark");
-                font-size:1.1rem;
+                font-size:0.5rem;
                 @include mixin.responsive(xs){
-                    font-size: 0.875rem;
+                    font-size: 0.7rem;
                     margin:0.5rem 0 1rem 0;
                 }
             }
@@ -74,6 +74,9 @@
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;   
                 max-width:200px;
                 text-align: center;
+                @include mixin.responsive(xs){
+                    display:none;
+                }
                 &:hover{
                     i{
                         transform:rotateZ(90deg);
