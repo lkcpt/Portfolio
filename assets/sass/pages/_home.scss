@@ -33,7 +33,7 @@
             flex:1 1 40rem;
             font-weight:bold;
             @include mixin.responsive(xs){
-                flex:1 1 20rem;
+                flex:1 1 10rem;
                 width:100%;
                 margin-top:1rem;
             }
@@ -64,7 +64,7 @@
                 margin:1.5rem 0 3rem 0;
                 display:block;
                 color:func.theme-colors("dark");
-                font-size:0.5rem;
+                font-size:1.2rem;
                 @include mixin.responsive(xs){
                     font-size: 0.7rem;
                     margin:0.5rem 0 1rem 0;
@@ -131,7 +131,7 @@
             width:50%;
             transform-style: preserve-3d;
             @include mixin.responsive(xs){
-                flex:1 1 20rem;
+                flex:1 1 15rem;
                 width:100%;
             }
             &--circle{

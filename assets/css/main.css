@@ -256,6 +256,11 @@ main section {
 }
 
 /* Header End */
+@media only screen and (max-width: 576px) {
+  .background-shapes {
+    display: none;
+  }
+}
 .background-shapes .box-1 {
   position: absolute;
   top: 20%;
@@ -582,7 +587,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .home--container--text {
-    flex: 1 1 20rem;
+    flex: 1 1 10rem;
     width: 100%;
     margin-top: 1rem;
   }
@@ -618,7 +623,7 @@ main section {
   margin: 1.5rem 0 3rem 0;
   display: block;
   color: #003262;
-  font-size: 0.5rem;
+  font-size: 1.2rem;
 }
 @media only screen and (max-width: 576px) {
   .home--container--text q {
@@ -692,7 +697,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .home--container--img {
-    flex: 1 1 20rem;
+    flex: 1 1 15rem;
     width: 100%;
   }
 }
@@ -755,7 +760,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .about--container--title h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 .about--container--title h1 .color {
@@ -795,6 +800,11 @@ main section {
   cursor: pointer;
   transition: 0.6s;
 }
+@media only screen and (max-width: 576px) {
+  .about--container--contents .img .blend img {
+    width: 60vw;
+  }
+}
 .about--container--contents .img .blend img:hover {
   mix-blend-mode: normal;
   transition: 0.6s;
@@ -806,15 +816,31 @@ main section {
   flex-direction: column;
   flex: 1 1 70%;
 }
+@media only screen and (max-width: 576px) {
+  .about--container--contents .text {
+    padding: 3rem 0rem 1rem 0;
+    width: 100%;
+  }
+}
 .about--container--contents .text .bio-head {
   color: #003262;
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+@media only screen and (max-width: 576px) {
+  .about--container--contents .text .bio-head {
+    font-size: 1.2rem;
+  }
+}
 .about--container--contents .text .bio-head .fl {
   font-size: 2.5rem;
   color: #CC0000;
+}
+@media only screen and (max-width: 576px) {
+  .about--container--contents .text .bio-head .fl {
+    font-size: 1.5rem;
+  }
 }
 .about--container--contents .text .bio {
   padding-top: 0.5rem;
@@ -823,6 +849,11 @@ main section {
   text-indent: 8rem;
   color: #000000;
   line-height: 2;
+}
+@media only screen and (max-width: 576px) {
+  .about--container--contents .text .bio {
+    font-size: 0.875rem;
+  }
 }
 .about--container--contents .text .bio .bold {
   color: #003262;
@@ -835,11 +866,23 @@ main section {
   height: 38%;
   margin-top: 1.5rem;
 }
+@media only screen and (max-width: 576px) {
+  .about--container--contents .text .personal {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+}
 .about--container--contents .text .personal .col1 {
   width: 60%;
   height: 100%;
   line-height: 2;
   padding: 1rem;
+}
+@media only screen and (max-width: 576px) {
+  .about--container--contents .text .personal .col1 {
+    width: 100%;
+    font-size: 0.875rem;
+  }
 }
 .about--container--contents .text .personal .col1 .details {
   list-style-type: none;
@@ -854,6 +897,13 @@ main section {
   height: 100%;
   border-left: 2px solid #003262;
 }
+@media only screen and (max-width: 576px) {
+  .about--container--contents .text .personal .col2 {
+    border: none;
+    width: 100%;
+    display: flex;
+  }
+}
 .about--container--contents .text .personal .col2 a {
   margin: 1.5rem auto;
   display: flex;
@@ -865,9 +915,21 @@ main section {
   width: 70%;
   border-radius: 1px;
 }
+@media only screen and (max-width: 576px) {
+  .about--container--contents .text .personal .col2 a {
+    font-size: 1rem;
+    margin: 1rem auto;
+    width: 40%;
+  }
+}
 .about--container--contents .text .personal .col2 a .desc {
   font-size: 0.875rem;
   color: #003262;
+}
+@media only screen and (max-width: 576px) {
+  .about--container--contents .text .personal .col2 a .desc {
+    font-size: 0.7rem;
+  }
 }
 
 /* About Page End */
