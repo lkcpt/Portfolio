@@ -1,4 +1,5 @@
 @use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixin;
 
 /* Home page */
 
@@ -19,19 +20,29 @@
         display:flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
         height:100%;
         width:100%;
         perspective: 1000px;
         z-index:1;
+        @include mixin.responsive(xs){
+            flex-direction:column-reverse;
+        }
         &--text{
             display:flex;
             flex-direction: column;
             flex:1 1 40rem;
             font-weight:bold;
+            @include mixin.responsive(xs){
+                flex:1 1 20rem;
+                width:100%;
+                margin-top:3rem;
+            }
             &__title{
                 font-size:3.5rem;
                 color: func.theme-colors("dark");
+                @include mixin.responsive(xs){
+                    font-size:2rem; 
+                }
                 .name{
                     display:block;
                     .red{
@@ -42,20 +53,25 @@
             &__desc{
                 font-size: 1.75rem;
                 color:func.theme-colors("dark");
+                @include mixin.responsive(xs){
+                    font-size:1.1rem; 
+                }
                 .auto-type{
                     color:func.theme-colors("title2");
                 }
-                
             }
             q{
                 margin:1.5rem 0 3rem 0;
                 display:block;
                 color:func.theme-colors("dark");
                 font-size:1.1rem;
+                @include mixin.responsive(xs){
+                    font-size: 0.875rem;
+                    margin:0.5rem 0 1rem 0;
+                }
             }
             .btn-primary{
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;  
-                border-radius:50px;    
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;   
                 max-width:200px;
                 text-align: center;
                 &:hover{
@@ -74,6 +90,11 @@
                 display:flex;
                 justify-content: space-evenly;
                 align-items: center;
+                @include mixin.responsive(xs){
+                   width:70%;
+                   margin-top:1.5rem;
+                   padding:0.25rem; 
+                }
                 a{
                     font-size: 1.2rem;
                     display:inline-block;
@@ -86,6 +107,12 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    @include mixin.responsive(xs){
+                        padding:0.25rem;
+                        height:25px;
+                        width:25px;
+                        font-size:0.875rem; 
+                     }
                     &:hover,&:focus{
                         color:func.theme-colors("dark");
                         background-color: func.theme-colors("primary");
@@ -100,17 +127,22 @@
             flex:1 1 40rem;
             width:50%;
             transform-style: preserve-3d;
+            @include mixin.responsive(xs){
+                flex:1 1 20rem;
+                width:100%;
+            }
             &--circle{
                 width:35vw;
                 height:35vw;
                 border-radius:50%;
                 overflow: hidden;
-                
-                /* background:linear-gradient(45deg,hotpink,purple); */
-
                 position:relative;
                 cursor:pointer;
                 transition:0.6s;
+                @include mixin.responsive(xs){
+                    height:80vw;
+                    width:80vw;
+                }
                 &__profile{
                     width: 70%;
                     position:absolute;

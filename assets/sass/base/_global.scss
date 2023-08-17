@@ -1,4 +1,4 @@
-
+@use "../abstract/mixins" as mixin;
 /* Global Utilities */
 
 .nowrap{
@@ -16,6 +16,10 @@ main{
         scroll-margin-top:3rem;
         min-height:100vh;
         padding:1rem 10rem;
+        @include mixin.responsive(xs){
+            padding:1rem 2rem;
+            overflow:hidden;
+        }
     }
 }
 

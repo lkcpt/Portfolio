@@ -1,5 +1,6 @@
 @use "../abstract/functions" as func;
-/* Buttons */
+@use "../abstract/mixins" as mixin;
+/* Buttons */ 
 
 .btn{
     font-size: 0.875rem;
@@ -10,6 +11,10 @@
     outline:none;
     margin:0;
     cursor:pointer;
+    @include mixin.responsive(xs){
+        font-size: 0.875rem;
+        padding:0.6rem 1.2rem;
+    }
     &-primary{
         @extend .btn;
         background-color: func.btn-colors("primary");

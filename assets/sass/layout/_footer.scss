@@ -1,10 +1,15 @@
 @use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixin;
 
 .footer{
     width:100%;
     padding:0rem 10rem;
     height:250px;
     background-color:func.theme-colors("dark");
+    @include mixin.responsive(xs){
+        padding:0 1rem;
+        overflow:hidden;
+    }
     &--container{
         display:flex;   
         justify-content: space-evenly;
