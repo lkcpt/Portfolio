@@ -247,7 +247,7 @@ main section {
   color: #CC0000;
 }
 .header-fixed {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
@@ -760,7 +760,9 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .about--container--title h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    width: 100%;
   }
 }
 .about--container--title h1 .color {
@@ -830,7 +832,8 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .about--container--contents .text .bio-head {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    letter-spacing: 0;
   }
 }
 .about--container--contents .text .bio-head .fl {
@@ -839,7 +842,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .about--container--contents .text .bio-head .fl {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 .about--container--contents .text .bio {
@@ -853,6 +856,7 @@ main section {
 @media only screen and (max-width: 576px) {
   .about--container--contents .text .bio {
     font-size: 0.875rem;
+    text-indent: 5rem;
   }
 }
 .about--container--contents .text .bio .bold {
@@ -949,6 +953,13 @@ main section {
   color: #003262;
   letter-spacing: 10px;
 }
+@media only screen and (max-width: 576px) {
+  .education .title {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    width: 100%;
+  }
+}
 .education .title .color {
   color: #CC0000;
 }
@@ -956,6 +967,11 @@ main section {
   position: relative;
   width: 65%;
   margin: 0rem auto 2rem auto;
+}
+@media only screen and (max-width: 576px) {
+  .education .timeline {
+    width: 100%;
+  }
 }
 .education .timeline::after {
   content: "";
@@ -969,11 +985,22 @@ main section {
   border-radius: 50px;
   z-index: -1;
 }
+@media only screen and (max-width: 576px) {
+  .education .timeline::after {
+    left: 1%;
+  }
+}
 .education .timeline .container {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
+}
+@media only screen and (max-width: 576px) {
+  .education .timeline .container {
+    width: 100%;
+    padding-right: 1rem;
+  }
 }
 .education .timeline .container::after {
   content: "\f19d";
@@ -994,6 +1021,14 @@ main section {
   color: #003262;
   font-family: "Font Awesome 5 Free";
 }
+@media only screen and (max-width: 576px) {
+  .education .timeline .container::after {
+    font-size: 0.875rem;
+    border-width: 2px;
+    width: 25px;
+    height: 25px;
+  }
+}
 .education .timeline .container::before {
   content: " ";
   height: 0;
@@ -1006,9 +1041,22 @@ main section {
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #003262;
 }
+@media only screen and (max-width: 576px) {
+  .education .timeline .container::before {
+    left: 30px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #003262 transparent transparent;
+  }
+}
 .education .timeline .left {
   left: 0;
   cursor: pointer;
+}
+@media only screen and (max-width: 576px) {
+  .education .timeline .left::after {
+    left: -4%;
+    top: 17px;
+  }
 }
 .education .timeline .left:hover .content {
   position: relative;
@@ -1018,13 +1066,29 @@ main section {
   left: 50%;
   cursor: pointer;
 }
+@media only screen and (max-width: 576px) {
+  .education .timeline .right {
+    left: 0%;
+  }
+}
 .education .timeline .right::before {
   left: 30px;
   border-width: 10px 10px 10px 0;
   border-color: transparent #003262 transparent transparent;
 }
+@media only screen and (max-width: 576px) {
+  .education .timeline .right::before {
+    left: 30px;
+  }
+}
 .education .timeline .right::after {
   left: -19px;
+}
+@media only screen and (max-width: 576px) {
+  .education .timeline .right::after {
+    left: -4%;
+    top: 17px;
+  }
 }
 .education .timeline .right:hover .content {
   position: relative;
@@ -1042,26 +1106,62 @@ main section {
   padding-top: 1rem;
   padding-left: 1.5rem;
 }
+@media only screen and (max-width: 576px) {
+  .education .timeline .content .tag {
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding-top: 0.8rem;
+    padding-left: 1.2rem;
+  }
+}
 .education .timeline .content .tag span {
   font-size: 1.6rem;
   font-weight: bold;
   color: #CC0000;
 }
+@media only screen and (max-width: 576px) {
+  .education .timeline .content .tag span {
+    font-size: 1.1rem;
+    display: block;
+  }
+}
 .education .timeline .content .desc {
   margin-left: 1.5rem;
   padding-bottom: 1rem;
 }
+@media only screen and (max-width: 576px) {
+  .education .timeline .content .desc {
+    padding-bottom: 0.8rem;
+    margin-left: 1.2rem;
+  }
+}
 .education .timeline .content .desc h3 {
   font-size: 1rem;
   color: #14a44d;
+}
+@media only screen and (max-width: 576px) {
+  .education .timeline .content .desc h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
 }
 .education .timeline .content .desc h2 {
   font-size: 1rem;
   font-weight: bold;
   color: #003262;
 }
+@media only screen and (max-width: 576px) {
+  .education .timeline .content .desc h2 {
+    font-size: 0.7rem;
+  }
+}
 .education .timeline .content .desc p {
   font-size: 0.875rem;
+}
+@media only screen and (max-width: 576px) {
+  .education .timeline .content .desc p {
+    font-size: 0.7rem;
+  }
 }
 .education .timeline .content .desc p i {
   color: #003262;

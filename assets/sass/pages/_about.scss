@@ -24,7 +24,9 @@
                 color:func.theme-colors("dark");
                 letter-spacing: 10px;
                 @include mixin.responsive(xs){
-                    font-size: 1.8rem;
+                    font-size: 1.4rem;
+                    letter-spacing:0;
+                    width:100%;
                 }
                 .color{
                     color:func.theme-colors("title1");
@@ -85,13 +87,14 @@
                     text-transform: uppercase;
                     letter-spacing: 3px;
                     @include mixin.responsive(xs){
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
+                        letter-spacing: 0;
                     }
                     .fl{
                         font-size:2.5rem;
                         color:func.theme-colors("title1");
                         @include mixin.responsive(xs){
-                            font-size: 1.5rem;
+                            font-size: 1.3rem;
                         }
                     }
                 }
@@ -104,6 +107,7 @@
                     line-height:2;
                     @include mixin.responsive(xs){
                         font-size: 0.875rem;
+                        text-indent: 5rem;
                     }
                     .bold{
                         color:func.theme-colors("dark");

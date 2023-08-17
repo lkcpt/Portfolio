@@ -1,4 +1,5 @@
 @use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixin;
 
 /* Education Page */
 
@@ -15,6 +16,11 @@
         padding:1rem;
         color:func.theme-colors("dark");
         letter-spacing: 10px;
+        @include mixin.responsive(xs){
+            font-size: 1.4rem;
+            letter-spacing:0;
+            width:100%;
+        }
         .color{
             color:func.theme-colors("title1");
         }
@@ -23,6 +29,9 @@
         position: relative;
         width:65%;
         margin: 0rem auto 2rem auto;
+        @include mixin.responsive(xs){
+            width:100%;
+        }
         &::after{
             content: "";
             position: absolute;
@@ -34,12 +43,19 @@
             margin-left: -3px;
             border-radius:50px;
             z-index:-1;
+            @include mixin.responsive(xs){
+                left:1%;
+            }
         }
         .container{
             padding: 10px 40px;
             position: relative;
             background-color: inherit;
             width: 50%;
+            @include mixin.responsive(xs){
+                width:100%;
+                padding-right:1rem;
+            }
             &::after{
                 content: "\f19d";
                 position: absolute;
@@ -52,6 +68,12 @@
                 border-radius: 50%;
                 z-index: 5;
                 font-size: 1.2rem;
+                @include mixin.responsive(xs){
+                    font-size:0.875rem;
+                    border-width: 2px;
+                    width:25px;
+                    height:25px;
+                }
                 display:flex;
                 align-items: center;
                 justify-content: center;
@@ -70,11 +92,22 @@
                 border: medium solid func.theme-colors("dark");
                 border-width: 10px 0 10px 10px;
                 border-color: transparent transparent transparent func.theme-colors("dark");
+                @include mixin.responsive(xs){
+                    left:30px;
+                    border-width: 10px 10px 10px 0;
+                    border-color: transparent func.theme-colors("dark") transparent transparent;
+                }
             }
         }
         .left{
             left:0;
             cursor:pointer;
+            &::after{
+                @include mixin.responsive(xs){
+                    left:-4%;
+                    top:17px;
+                }
+            }
             &:hover{
                 .content{
                     position: relative;
@@ -85,13 +118,23 @@
         .right{
             left:50%;
             cursor:pointer;
+            @include mixin.responsive(xs){
+                left:0%;
+            }
             &::before{
                 left: 30px;
                 border-width: 10px 10px 10px 0;
                 border-color: transparent func.theme-colors("dark") transparent transparent;
+                @include mixin.responsive(xs){
+                    left:30px;
+                }
             }
             &::after{
                 left: -19px;
+                @include mixin.responsive(xs){
+                    left:-4%;
+                    top:17px;
+                }
             }
             &:hover{
                 .content{
@@ -110,26 +153,50 @@
                 font-size: 0.875rem;
                 padding-top: 1rem;
                 padding-left: 1.5rem;
+                @include mixin.responsive(xs){
+                    font-size:0.6rem;
+                    font-weight: bold;
+                    padding-top: 0.8rem;
+                    padding-left: 1.2rem;
+                }
                 span{
                     font-size: 1.6rem;
                     font-weight: bold;
                     color:func.theme-colors("title1");
+                    @include mixin.responsive(xs){
+                        font-size:1.1rem;
+                        display:block;
+                    }
                 }
             }
             .desc{
                 margin-left: 1.5rem;
                 padding-bottom: 1rem;
+                @include mixin.responsive(xs){
+                    padding-bottom: 0.8rem;
+                    margin-left: 1.2rem;
+                }
                 h3{
                     font-size: 1rem;
                     color:func.theme-colors("title2") ;
+                    @include mixin.responsive(xs){
+                        font-size:0.8rem;
+                        font-weight:500;
+                    }
                 }
                 h2{
                     font-size: 1rem;
                     font-weight: bold;
                     color: func.theme-colors("dark");
+                    @include mixin.responsive(xs){
+                        font-size:0.7rem;
+                    }
                 }
                 p{
                     font-size: 0.875rem;
+                    @include mixin.responsive(xs){
+                        font-size:0.7rem;
+                    }
                     i{
                         color:func.theme-colors("dark");
                     }
