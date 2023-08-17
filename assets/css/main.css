@@ -1345,6 +1345,41 @@ main section {
 }
 
 /* Contact Page End */
+.success {
+  background-color: #fefefa;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.success .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.success .container .title {
+  color: #CC0000;
+  font-size: 3rem;
+}
+.success .container .desc {
+  color: #14a44d;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+.success .container a {
+  text-align: center;
+  color: #0989f7;
+  text-decoration: underline;
+}
+.success .container a:hover {
+  color: #14a44d;
+}
+
 /* Animations */
 /* Logo color change */
 @keyframes color-change {
