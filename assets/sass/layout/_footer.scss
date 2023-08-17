@@ -1,0 +1,8 @@
+@use "../abstract/functions" as func;
+
+.footer{
+    width:100%;
+    padding:1rem 10rem;
+    height:30vh;
+    background-color:func.theme-colors("dark");
+}

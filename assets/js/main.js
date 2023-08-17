@@ -146,7 +146,7 @@ srtop.reveal(".education .title", { delay: 200 });
 srtop.reveal(".education .timeline", { delay: 400 });
 srtop.reveal(".education .timeline .container", { interval: 400 });
 
-/* Skills */
+/* Skills Scroll */
 srtop.reveal(".skills--container .title-holder .title", { delay: 200 });
 srtop.reveal(".skills--container .title-holder q", { delay: 300 });
 srtop.reveal(".skills--container .skill-holder .skill-set", { delay: 400 });
@@ -163,7 +163,7 @@ srtop.reveal(".skills--container .skill-holder .professional .circle", {
   interval: 300,
 });
 
-/* Experience */
+/* Experience Scroll */
 srtop.reveal(".experience--container .title", { delay: 200 });
 srtop.reveal(".experience--container .btn-box", { delay: 300 });
 
@@ -178,7 +178,7 @@ srtop.reveal(".experience--container .items .company .c-website", {
   delay: 800,
 });
 
-/* Projects */
+/* Projects Scroll */
 
 srtop.reveal(".projects--title", { delay: 200 });
 srtop.reveal(".projects .cards .project-cards", { delay: 300 });
@@ -187,3 +187,19 @@ srtop.reveal(".projects .cards .project-cards .project-head", { delay: 500 });
 srtop.reveal(".projects .cards .project-cards .abstract", { delay: 600 });
 srtop.reveal(".projects .cards .project-cards .category", { delay: 700 });
 srtop.reveal(".projects .cards .project-cards .card-btn", { delay: 800 });
+
+/* Contact Scroll */
+srtop.reveal(".contact--title", { delay: 200 });
+srtop.reveal(".contact--info", { delay: 300 });
+srtop.reveal(".contact--info .connect", { delay: 400 });
+srtop.reveal(".contact--info .contact-links", { delay: 500 });
+
+srtop.reveal(".contact--form .img", { delay: 600 });
+
+srtop.reveal(".contact--form .form-elements .form-title", { delay: 600 });
+srtop.reveal(".contact--form .form-elements form .field", { delay: 700 });
+srtop.reveal(".contact--form .form-elements form .field", { interval: 50 });
+srtop.reveal(".contact--form .form-elements form .message", { delay: 900 });
+srtop.reveal(".contact--form .form-elements form .button-area", {
+  delay: 950,
+});

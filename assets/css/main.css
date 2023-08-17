@@ -391,6 +391,13 @@ main section {
   animation: box-shape linear 3s infinite;
 }
 
+.footer {
+  width: 100%;
+  padding: 1rem 10rem;
+  height: 30vh;
+  background-color: #003262;
+}
+
 /* Home page */
 .home {
   background-color: #fefefa;
@@ -1211,7 +1218,7 @@ main section {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 .contact--title .title {
@@ -1233,6 +1240,7 @@ main section {
 }
 .contact--form .img {
   flex-basis: 50%;
+  animation: float 3s ease-out infinite;
 }
 .contact--form .img img {
   width: 700px;
@@ -1342,6 +1350,42 @@ main section {
 .contact--form .form-elements .button-area {
   display: flex;
   flex-direction: row-reverse;
+}
+.contact--info {
+  background-color: #f0fff0;
+  width: 80%;
+  padding: 2rem;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contact--info .connect {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #003262;
+}
+.contact--info .connect span {
+  color: #CC0000;
+  font-size: 1.7rem;
+}
+.contact--info .contact-links {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+.contact--info .contact-links a {
+  color: #003262;
+  font-weight: bold;
+}
+.contact--info .contact-links a i {
+  color: #CC0000;
+}
+.contact--info .contact-links a:hover, .contact--info .contact-links a:focus {
+  font-size: 0.9rem;
+  color: #CC0000;
+  transition: 0.3s;
 }
 
 /* Contact Page End */
