@@ -1405,7 +1405,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .skills--container .skill-holder .skill-set .container .circle .progress h4 img {
-    width: 10px;
+    width: 12px;
   }
 }
 .skills--container .skill-holder .skill-set .container .circle .progress::before {
@@ -1426,7 +1426,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .skills--container .skill-holder .skill-set .container .circle .progress::after {
-    inset: 3px;
+    inset: 4px;
   }
 }
 .skills--container .skill-holder .skill-set .container .circle .progress.html::before {
@@ -1502,6 +1502,14 @@ main section {
   color: #003262;
   letter-spacing: 10px;
 }
+@media only screen and (max-width: 576px) {
+  .experience--container .title {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
 .experience--container .title .color {
   color: #CC0000;
 }
@@ -1530,21 +1538,45 @@ main section {
   color: #003262;
   border-radius: 6px;
 }
+@media only screen and (max-width: 576px) {
+  .experience--container .items .btn-box button {
+    font-size: 0.875rem;
+    margin: 0 1rem;
+    padding: 0.5rem;
+  }
+}
 .experience--container .items .btn-box button:hover {
   border: 2px solid #0275d8;
   font-size: 1.3rem;
   transition: 0.6s;
 }
+@media only screen and (max-width: 576px) {
+  .experience--container .items .btn-box button:hover {
+    font-size: 0.95rem;
+    border-width: 1px;
+  }
+}
 .experience--container .items .btn-box i {
   font-size: 2.2rem;
   color: #003262;
 }
-.experience--container .items .btn-box .active {
+@media only screen and (max-width: 576px) {
+  .experience--container .items .btn-box i {
+    font-size: 1rem;
+  }
+}
+.experience--container .items .btn-box .acctive {
   color: #fefefa;
   background-color: #0275d8;
   border: 2px solid #0275d8;
   transition: 0.6s;
   font-size: 1.3rem;
+}
+@media only screen and (max-width: 576px) {
+  .experience--container .items .btn-box .acctive {
+    font-size: 0.95rem;
+    border-width: 1px;
+  }
 }
 .experience--container .items .company {
   width: 60%;
@@ -1553,17 +1585,20 @@ main section {
   z-index: 10;
   text-align: left;
   position: absolute;
-  overflow: auto;
   top: 10%;
   transform: translateX(200%);
   transition: 1s;
+}
+@media only screen and (max-width: 576px) {
+  .experience--container .items .company {
+    width: 100%;
+  }
 }
 .experience--container .items .company .contents {
   background-color: #fefefa;
   padding: 3rem;
   border-radius: 20px;
   line-height: 2;
-  overflow: auto;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 .experience--container .items .company .contents .role {
@@ -1608,8 +1643,13 @@ main section {
   background-position: center;
   background-repeat: no-repeat;
 }
-.experience--container .items #asuran {
+.experience--container .items .active {
   transform: translateX(37%);
+}
+@media only screen and (max-width: 576px) {
+  .experience--container .items .active {
+    transform: translateX(0%);
+  }
 }
 
 /* Experience Page End */

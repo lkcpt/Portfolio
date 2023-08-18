@@ -97,19 +97,19 @@ let asuran_content = document.getElementById("asuran");
 let flometriq_content = document.getElementById("flometriq");
 
 asuran.addEventListener("click", () => {
-  asuran_content.style.transform = "translateX(37%)";
-  flometriq_content.style.transform = "translateX(200%)";
-  asuran.classList.add("active");
-  flometriq.classList.remove("active");
+  asuran_content.classList.add("active");
+  flometriq_content.classList.remove("active");
+  asuran.classList.add("acctive");
+  flometriq.classList.remove("acctive");
   asuran_content.style.transitionDelay = "0.5s";
   flometriq_content.style.transitionDelay = "0s";
 });
 
 flometriq.addEventListener("click", () => {
-  asuran_content.style.transform = "translateX(200%)";
-  flometriq_content.style.transform = "translateX(37%)";
-  asuran.classList.remove("active");
-  flometriq.classList.add("active");
+  asuran_content.classList.remove("active");
+  flometriq_content.classList.add("active");
+  asuran.classList.remove("acctive");
+  flometriq.classList.add("acctive");
   asuran_content.style.transitionDelay = "0s";
   flometriq_content.style.transitionDelay = "0.5s";
 });

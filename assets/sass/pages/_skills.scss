@@ -196,7 +196,7 @@
                                     display:grid;
                                     place-items: center;
                                     @include mixin.responsive(xs){
-                                        width:10px;
+                                        width:12px;
                                     }
                                 }
                                 
@@ -217,7 +217,7 @@
                                 background-color:#fefefa;
                                 box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
                                 @include mixin.responsive(xs){
-                                    inset:3px;
+                                    inset:4px;
                                 }                            
                             }
                             &.html::before{
