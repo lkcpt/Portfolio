@@ -1,4 +1,5 @@
 @use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixin;
 
 .success{
     background-color: func.theme-colors("primary");
@@ -17,12 +18,19 @@
         .title{
             color:func.theme-colors("title1");
             font-size:3rem;
+            @include mixin.responsive(xs){
+                font-size:1.5rem;
+                text-align: center;
+            }
         }
         .desc{
             color:func.theme-colors("title2");
             font-size:1.5rem;
             text-align: center;
             font-weight: bold;
+            @include mixin.responsive(xs){
+                font-size:1.1rem;
+            }
         }
         a{
             text-align: center;
