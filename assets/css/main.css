@@ -1502,7 +1502,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .experience--container {
-    height: 60vh;
+    height: 65vh;
   }
 }
 .experience--container .title {
@@ -1617,6 +1617,7 @@ main section {
     padding: 1rem;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px, rgba(0, 0, 0, 0.05) 0px 1.5px 3px;
+    line-height: 1.8;
   }
 }
 .experience--container .items .company .contents .role {
@@ -1627,7 +1628,7 @@ main section {
 @media only screen and (max-width: 576px) {
   .experience--container .items .company .contents .role {
     font-size: 1rem;
-    text-shadow: 0.2px 0.2px 1px black;
+    text-shadow: none;
   }
 }
 .experience--container .items .company .contents .c-name {
@@ -1647,7 +1648,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .experience--container .items .company .contents .details {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     text-shadow: none;
     max-width: 70%;
   }
@@ -1660,7 +1661,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .experience--container .items .company .contents .description {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 }
 .experience--container .items .company .contents .description ul {
@@ -1678,7 +1679,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .experience--container .items .company .contents .c-website {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 }
 .experience--container .items .company .contents .c-website .btn-primary {
@@ -1735,6 +1736,14 @@ main section {
   color: #003262;
   letter-spacing: 10px;
 }
+@media only screen and (max-width: 576px) {
+  .projects--title .title {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
 .projects--title .title .color {
   color: #CC0000;
 }
@@ -1742,9 +1751,13 @@ main section {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   width: 100%;
   z-index: 1;
+}
+@media only screen and (max-width: 576px) {
+  .projects .cards {
+    flex-direction: column;
+  }
 }
 .projects .cards .project-cards {
   margin: 3rem 5rem;
@@ -1753,6 +1766,11 @@ main section {
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
+@media only screen and (max-width: 576px) {
+  .projects .cards .project-cards {
+    margin: 1rem 1rem;
+  }
+}
 .projects .cards .project-cards .project-img img {
   width: 400px;
 }
@@ -1760,24 +1778,51 @@ main section {
   max-width: 400px;
   padding: 1.5rem;
 }
+@media only screen and (max-width: 576px) {
+  .projects .cards .project-cards .project-content {
+    padding: 1rem;
+  }
+}
 .projects .cards .project-cards .project-content h4 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #003262;
 }
+@media only screen and (max-width: 576px) {
+  .projects .cards .project-cards .project-content h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
 .projects .cards .project-cards .project-content h4 span {
   color: #CC0000;
   font-size: 1.7rem;
 }
+@media only screen and (max-width: 576px) {
+  .projects .cards .project-cards .project-content h4 span {
+    font-size: 1.2rem;
+  }
+}
 .projects .cards .project-cards .project-content .abstract {
   text-align: justify;
   margin-bottom: 1rem;
+}
+@media only screen and (max-width: 576px) {
+  .projects .cards .project-cards .project-content .abstract {
+    font-size: 0.7rem;
+  }
 }
 .projects .cards .project-cards .project-content .category {
   margin-bottom: 1.5rem;
   font-size: 1rem;
   font-weight: bold;
   color: #003262;
+}
+@media only screen and (max-width: 576px) {
+  .projects .cards .project-cards .project-content .category {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
 }
 .projects .cards .project-cards .project-content .category span {
   font-weight: normal;
@@ -1786,6 +1831,11 @@ main section {
 .projects .cards .project-cards .project-content .card-btn {
   display: flex;
   justify-content: space-evenly;
+}
+@media only screen and (max-width: 576px) {
+  .projects .cards .project-cards .project-content .card-btn .btn-info {
+    font-size: 0.7rem;
+  }
 }
 
 /* Projects Page End */

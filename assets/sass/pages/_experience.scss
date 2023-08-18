@@ -20,7 +20,7 @@
         height: 90vh;
         width:100%;
         @include mixin.responsive(xs){
-            height:60vh;
+            height:65vh;
         }
         .title{
             font-size:3rem;
@@ -119,6 +119,7 @@
                         padding:1rem;
                         border-radius:10px;
                         box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px, rgba(0, 0, 0, 0.05) 0px 1.5px 3px;
+                        line-height:1.8;
                     }
                     .role{
                         font-size:2.5rem;
@@ -126,7 +127,7 @@
                         text-shadow:2px 2px 3px black;
                         @include mixin.responsive(xs){
                             font-size: 1rem;
-                            text-shadow:0.2px 0.2px 1px black;
+                            text-shadow:none;
                         }
                     }
                     .c-name{
@@ -142,7 +143,7 @@
                         max-width:50%;
                         font-size: 1.1rem;
                         @include mixin.responsive(xs){
-                            font-size: 0.5rem;
+                            font-size: 0.6rem;
                             text-shadow:none;
                             max-width:70%;
                         }
@@ -153,7 +154,7 @@
                     .description{
                         font-size: 1.1rem;
                         @include mixin.responsive(xs){
-                            font-size: 0.5rem;
+                            font-size: 0.6rem;
                         }
                         ul{
                             list-style-type: square;
@@ -167,7 +168,7 @@
                     .c-website{
                         padding-top:0.5rem;
                         @include mixin.responsive(xs){
-                            font-size: 0.5rem;
+                            font-size: 0.6rem;
 
                         }
                         .btn-primary{

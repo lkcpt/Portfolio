@@ -1,4 +1,5 @@
 @use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixin;
 
 /* Projects Page */
 
@@ -15,6 +16,12 @@
             padding:1rem;
             color:func.theme-colors("dark");
             letter-spacing: 10px;
+            @include mixin.responsive(xs){
+                font-size: 1.4rem;
+                letter-spacing:0;
+                width:100%;
+                text-align: center;
+            }
             .color{
                 color:func.theme-colors("title1");
             }
@@ -24,15 +31,20 @@
         display:flex;
         justify-content: center;
         align-items: center;
-        flex-wrap:wrap;
         width:100%;
         z-index:1;
+        @include mixin.responsive(xs){
+            flex-direction: column;
+        }
         .project-cards{
             margin:3rem 5rem;
             background-color: func.theme-colors("primary");
             border-radius:10px;
             overflow: hidden;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+            @include mixin.responsive(xs){
+                margin:1rem 1rem;
+            }
             .project-img{
                 img{
                     width:400px;
@@ -41,32 +53,54 @@
             .project-content{
                 max-width:400px;
                 padding:1.5rem;
+                @include mixin.responsive(xs){
+                    padding:1rem;
+                }
                 h4{
                     font-size:1.5rem;
                     margin-bottom:1rem;
                     color:func.theme-colors("dark");
+                    @include mixin.responsive(xs){
+                        font-size: 1rem;
+                        margin-bottom:0.5rem;
+                    }
                     span{
                         color:func.theme-colors("title1"); 
                         font-size: 1.7rem;
+                        @include mixin.responsive(xs){
+                            font-size: 1.2rem;
+                        }
                     }
                 }
                 .abstract{  
                     text-align: justify;
                     margin-bottom:1rem;
+                    @include mixin.responsive(xs){
+                        font-size: 0.7rem;
+                    }
                 }
                 .category{
                     margin-bottom:1.5rem;
                     font-size:1rem;
                     font-weight:bold;
                     color:func.theme-colors("dark");
+                    @include mixin.responsive(xs){
+                        font-size: 0.7rem;
+                        margin-bottom:0.5rem;
+                    }
                     span{
                         font-weight:normal;
-                        color:func.theme-colors("black")
+                        color:func.theme-colors("black");
                     }
                 }
                 .card-btn{
                     display:flex;
                     justify-content: space-evenly;
+                    .btn-info{
+                        @include mixin.responsive(xs){
+                            font-size: 0.7rem;
+                        }
+                    }
                 }
             }
         }
