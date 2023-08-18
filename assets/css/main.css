@@ -2149,10 +2149,15 @@ main section {
 .contact--info .contact-links a i {
   color: #CC0000;
 }
-.contact--info .contact-links a:hover, .contact--info .contact-links a:focus {
+.contact--info .contact-links a:hover {
   font-size: 0.9rem;
   color: #CC0000;
   transition: 0.3s;
+}
+@media only screen and (max-width: 576px) {
+  .contact--info .contact-links a:hover {
+    font-size: 0.8rem;
+  }
 }
 
 /* Contact Page End */

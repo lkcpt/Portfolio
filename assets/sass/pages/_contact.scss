@@ -220,10 +220,13 @@
                 i{
                     color:func.theme-colors("title1");
                 }
-                &:hover,&:focus{
+                &:hover{
                     font-size: 0.9rem;
                     color:func.theme-colors("title1");
                     transition: 0.3s;
+                    @include mixin.responsive(xs){
+                        font-size: 0.8rem;
+                    }
                 }
             }
         }
