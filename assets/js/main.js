@@ -23,6 +23,30 @@ function showActiveMenu() {
 
 showActiveMenu();
 
+/* Menu responsive */
+function showMenu() {
+  const header_menu = document.querySelector(".header--menu");
+  const icon = document.querySelectorAll(".toggle-icon");
+
+  header_menu.classList.toggle("show");
+  icon.forEach((i) => {
+    i.classList.toggle("hidden");
+  });
+}
+
+const toggle_btn = document.getElementById("hamburger");
+toggle_btn.addEventListener("click", showMenu);
+
+/* close on menu click */
+function actOnMenuClick() {
+  const navLinks = document.querySelectorAll(".header--menu li a");
+  for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener("click", showMenu);
+  }
+}
+
+actOnMenuClick();
+
 /* Clock*/
 const hourEl = document.getElementById("hour");
 const minuteEl = document.getElementById("minutes");
