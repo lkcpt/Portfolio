@@ -1487,6 +1487,11 @@ main section {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 576px) {
+  .experience {
+    min-height: 60vh;
+  }
+}
 .experience--container {
   display: flex;
   flex-direction: column;
@@ -1494,6 +1499,11 @@ main section {
   align-items: center;
   height: 90vh;
   width: 100%;
+}
+@media only screen and (max-width: 576px) {
+  .experience--container {
+    height: 60vh;
+  }
 }
 .experience--container .title {
   font-size: 3rem;
@@ -1540,9 +1550,9 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .experience--container .items .btn-box button {
-    font-size: 0.875rem;
-    margin: 0 1rem;
-    padding: 0.5rem;
+    font-size: 0.6rem;
+    margin: 0 0.5rem;
+    padding: 0.4rem;
   }
 }
 .experience--container .items .btn-box button:hover {
@@ -1552,7 +1562,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .experience--container .items .btn-box button:hover {
-    font-size: 0.95rem;
+    font-size: 0.7rem;
     border-width: 1px;
   }
 }
@@ -1574,7 +1584,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .experience--container .items .btn-box .acctive {
-    font-size: 0.95rem;
+    font-size: 0.7rem;
     border-width: 1px;
   }
 }
@@ -1592,6 +1602,7 @@ main section {
 @media only screen and (max-width: 576px) {
   .experience--container .items .company {
     width: 100%;
+    padding: 1rem 0.5rem 1rem 0.5rem;
   }
 }
 .experience--container .items .company .contents {
@@ -1601,14 +1612,32 @@ main section {
   line-height: 2;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
+@media only screen and (max-width: 576px) {
+  .experience--container .items .company .contents {
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px, rgba(0, 0, 0, 0.05) 0px 1.5px 3px;
+  }
+}
 .experience--container .items .company .contents .role {
   font-size: 2.5rem;
   color: #CC0000;
   text-shadow: 2px 2px 3px black;
 }
+@media only screen and (max-width: 576px) {
+  .experience--container .items .company .contents .role {
+    font-size: 1rem;
+    text-shadow: 0.2px 0.2px 1px black;
+  }
+}
 .experience--container .items .company .contents .c-name {
   font-size: 1.8rem;
   color: #003262;
+}
+@media only screen and (max-width: 576px) {
+  .experience--container .items .company .contents .c-name {
+    font-size: 0.875rem;
+  }
 }
 .experience--container .items .company .contents .details {
   display: flex;
@@ -1616,32 +1645,70 @@ main section {
   max-width: 50%;
   font-size: 1.1rem;
 }
+@media only screen and (max-width: 576px) {
+  .experience--container .items .company .contents .details {
+    font-size: 0.5rem;
+    text-shadow: none;
+    max-width: 70%;
+  }
+}
 .experience--container .items .company .contents .details i {
   color: #14a44d;
 }
 .experience--container .items .company .contents .description {
   font-size: 1.1rem;
 }
+@media only screen and (max-width: 576px) {
+  .experience--container .items .company .contents .description {
+    font-size: 0.5rem;
+  }
+}
 .experience--container .items .company .contents .description ul {
   list-style-type: square;
   list-style-position: inside;
   margin-left: 3rem;
 }
+@media only screen and (max-width: 576px) {
+  .experience--container .items .company .contents .description ul {
+    margin-left: 1rem;
+  }
+}
 .experience--container .items .company .contents .c-website {
   padding-top: 0.5rem;
 }
+@media only screen and (max-width: 576px) {
+  .experience--container .items .company .contents .c-website {
+    font-size: 0.5rem;
+  }
+}
 .experience--container .items .company .contents .c-website .btn-primary {
   padding: 0.5rem;
+}
+@media only screen and (max-width: 576px) {
+  .experience--container .items .company .contents .c-website .btn-primary {
+    font-size: 0.5rem;
+    padding: 0.4rem;
+  }
 }
 .experience--container .items .company .flometriq {
   background-image: url("../img/experience/flometriq.png");
   background-position: center;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 576px) {
+  .experience--container .items .company .flometriq {
+    background-size: 200px;
+  }
+}
 .experience--container .items .company .asuran {
   background-image: url("../img/experience/asuran.png");
   background-position: center;
   background-repeat: no-repeat;
+}
+@media only screen and (max-width: 576px) {
+  .experience--container .items .company .asuran {
+    background-size: 200px;
+  }
 }
 .experience--container .items .active {
   transform: translateX(37%);
