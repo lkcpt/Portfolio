@@ -106,7 +106,7 @@
                 transition:1s;
                 @include mixin.responsive(xs){
                     width:100%;
-                    padding:1rem 0.5rem 1rem 0.5rem;
+                    padding:2rem 0.5rem 1rem 0.5rem;
                 }
                 .contents{
                     background-color:func.theme-colors("primary") ;
