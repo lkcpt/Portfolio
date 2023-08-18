@@ -1101,6 +1101,11 @@ main section {
   border-radius: 6px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+@media only screen and (max-width: 576px) {
+  .education .timeline .content {
+    box-shadow: 2px 2px 5px black;
+  }
+}
 .education .timeline .content .tag {
   font-size: 0.875rem;
   padding-top: 1rem;
@@ -1152,7 +1157,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .education .timeline .content .desc h2 {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
 }
 .education .timeline .content .desc p {
@@ -1160,7 +1165,7 @@ main section {
 }
 @media only screen and (max-width: 576px) {
   .education .timeline .content .desc p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 }
 .education .timeline .content .desc p i {
@@ -1185,11 +1190,29 @@ main section {
   width: 100%;
   gap: 4rem;
 }
+@media only screen and (max-width: 576px) {
+  .skills--container {
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .skills--container .title-holder {
+    text-align: center;
+  }
+}
 .skills--container .title-holder .title {
   font-size: 3rem;
   color: #003262;
   letter-spacing: 10px;
   text-align: center;
+}
+@media only screen and (max-width: 576px) {
+  .skills--container .title-holder .title {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    width: 100%;
+  }
 }
 .skills--container .title-holder .title .color {
   color: #CC0000;
@@ -1199,20 +1222,34 @@ main section {
   color: #003262;
   font-weight: 500;
 }
+@media only screen and (max-width: 576px) {
+  .skills--container .title-holder q {
+    font-size: 0.7rem;
+  }
+}
 .skills--container .skill-holder {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
   gap: 2rem;
   z-index: 1;
+}
+@media only screen and (max-width: 576px) {
+  .skills--container .skill-holder {
+    flex-direction: column;
+  }
 }
 .skills--container .skill-holder .skill-set {
   background-color: #fefefa;
   padding: 0.5rem 3rem 3rem 3rem;
   border-radius: 20px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+@media only screen and (max-width: 576px) {
+  .skills--container .skill-holder .skill-set {
+    padding: 0.25rem 1rem 1rem 1rem;
+  }
 }
 .skills--container .skill-holder .skill-set .heading {
   text-align: center;
@@ -1221,19 +1258,41 @@ main section {
   color: #003262;
   font-size: 1.5rem;
 }
+@media only screen and (max-width: 576px) {
+  .skills--container .skill-holder .skill-set .heading {
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}
 .skills--container .skill-holder .skill-set .heading span {
   color: #CC0000;
   font-size: 2rem;
+}
+@media only screen and (max-width: 576px) {
+  .skills--container .skill-holder .skill-set .heading span {
+    font-size: 1.2rem;
+  }
 }
 .skills--container .skill-holder .skill-set .container {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
+@media only screen and (max-width: 576px) {
+  .skills--container .skill-holder .skill-set .container {
+    gap: 1rem;
+  }
+}
 .skills--container .skill-holder .skill-set .container .circle {
   position: relative;
   display: flex;
   gap: 3rem;
+}
+@media only screen and (max-width: 576px) {
+  .skills--container .skill-holder .skill-set .container .circle {
+    gap: 1rem;
+  }
 }
 .skills--container .skill-holder .skill-set .container .circle .html {
   background: #e5e4e2 linear-gradient(to right, transparent 50%, #14a44d 0);
@@ -1280,6 +1339,12 @@ main section {
   transition: 0.3s;
   cursor: pointer;
 }
+@media only screen and (max-width: 576px) {
+  .skills--container .skill-holder .skill-set .container .circle .progress {
+    width: 110px;
+    height: 110px;
+  }
+}
 .skills--container .skill-holder .skill-set .container .circle .progress:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   transition: 0.3s;
@@ -1292,9 +1357,19 @@ main section {
   font-size: 1.2rem;
   z-index: 1;
 }
+@media only screen and (max-width: 576px) {
+  .skills--container .skill-holder .skill-set .container .circle .progress h3 {
+    font-size: 1rem;
+  }
+}
 .skills--container .skill-holder .skill-set .container .circle .progress h3 span {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 400;
+}
+@media only screen and (max-width: 576px) {
+  .skills--container .skill-holder .skill-set .container .circle .progress h3 span {
+    font-size: 0.8rem;
+  }
 }
 .skills--container .skill-holder .skill-set .container .circle .progress h4 {
   display: flex;
@@ -1309,14 +1384,29 @@ main section {
   font-weight: bold;
   z-index: 10;
 }
+@media only screen and (max-width: 576px) {
+  .skills--container .skill-holder .skill-set .container .circle .progress h4 {
+    font-size: 0.5rem;
+  }
+}
 .skills--container .skill-holder .skill-set .container .circle .progress h4 i {
   font-size: 1.2rem;
   color: #003262;
+}
+@media only screen and (max-width: 576px) {
+  .skills--container .skill-holder .skill-set .container .circle .progress h4 i {
+    font-size: 0.875rem;
+  }
 }
 .skills--container .skill-holder .skill-set .container .circle .progress h4 img {
   width: 20px;
   display: grid;
   place-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .skills--container .skill-holder .skill-set .container .circle .progress h4 img {
+    width: 10px;
+  }
 }
 .skills--container .skill-holder .skill-set .container .circle .progress::before {
   content: "";
@@ -1333,6 +1423,11 @@ main section {
   border-radius: 50%;
   background-color: #fefefa;
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+@media only screen and (max-width: 576px) {
+  .skills--container .skill-holder .skill-set .container .circle .progress::after {
+    inset: 3px;
+  }
 }
 .skills--container .skill-holder .skill-set .container .circle .progress.html::before {
   background-color: #14a44d;
