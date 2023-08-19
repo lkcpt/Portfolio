@@ -8,6 +8,7 @@
     background-color:func.theme-colors("dark");
     @include mixin.responsive(xs){
         padding:0 1rem;
+        height:auto;
     }
     &--container{
         display:flex;   
@@ -15,10 +16,13 @@
         align-items: flex-start;
         color:func.theme-colors("white");
         height:80%;
+        @include mixin.responsive(xs){
+            flex-direction: column;
+        }
         .col1{
             width:45%;
             @include mixin.responsive(xs){
-                width:50%;
+                width:100%;
             }
             .head{
                 font-size:2rem;
@@ -26,29 +30,27 @@
                 padding-top:0.5rem;
                 font-weight:bold;
                 @include mixin.responsive(xs){
-                    font-size:1rem;
-                    font-weight:normal;
+                    font-size:1.2rem;
+                    text-align:center;
                 }
                 span{
                     color:func.theme-colors("title1");
-                    @include mixin.responsive(xs){
-                        display:block;
-                        font-weight:bold;
-                    }
                 }
             }
             .desc{
                 font-size: 1.1rem;
                 margin-top:1rem;
                 @include mixin.responsive(xs){
-                    font-size:0.7rem;
+                    font-size:0.8rem;
                     margin-top:0.5rem;
+                    text-align: center;
                 }
             }
             .stay{
                 font-size: 0.875rem;
                 @include mixin.responsive(xs){
                     font-size:0.7rem;
+                    text-align: center;
                 }
             }
         }
@@ -64,7 +66,7 @@
         .col2{
             width:35%;
             @include mixin.responsive(xs){
-                width:50%;
+                width:100%;
             }
             h3{
                 font-weight:normal;
@@ -72,7 +74,7 @@
                 padding:0.5rem 0;
                 font-size:1.3rem;
                 @include mixin.responsive(xs){
-                    font-size:0.8rem;
+                    font-size:0.875rem;
                     text-align:center;
                 }
             }
@@ -85,10 +87,9 @@
                 justify-content: space-between;
                 align-items: center;
                 @include mixin.responsive(xs){
-                    margin:0.2rem auto;
-                    width:60%;
-                    flex-wrap: wrap;
-                    gap:1rem;
+                    margin:0.5rem auto;
+                    width:70%;
+                    justify-content: space-evenly;
                     padding:0;
                 }
                 a{
@@ -114,18 +115,23 @@
     &--copyright{
         width:100%;
         height:20%;
+        @include mixin.responsive(xs){
+           height:auto;
+           padding: 1rem 0;
+        }
         p{
             text-align:center;
             color:func.theme-colors("white");
             font-size:1.2rem;
             @include mixin.responsive(xs){
                 font-size:0.875rem;
+
             }
             span{
                 color:func.theme-colors("title1");
                 font-size:1.5rem;
                 @include mixin.responsive(xs){
-                    font-size:1rem;
+                    font-size:1.1rem;
                 }
             }
         }
