@@ -221,9 +221,10 @@ srtop.reveal(".contact--info .contact-links", { delay: 500 });
 srtop.reveal(".contact--form .img", { delay: 600 });
 
 srtop.reveal(".contact--form .form-elements .form-title", { delay: 600 });
-srtop.reveal(".contact--form .form-elements form .field", { delay: 700 });
-srtop.reveal(".contact--form .form-elements form .field", { interval: 50 });
-srtop.reveal(".contact--form .form-elements form .message", { delay: 900 });
-srtop.reveal(".contact--form .form-elements form .button-area", {
-  delay: 950,
+srtop.reveal(".contact--form .form-elements form .form-group div", {
+  delay: 700,
 });
+srtop.reveal(".contact--form .form-elements form .form-group div", {
+  interval: 50,
+});
+srtop.reveal(".contact--form .form-elements form .button-area", { delay: 700 });

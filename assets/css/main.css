@@ -216,8 +216,8 @@ main section {
     width: 85%;
     height: 100vh;
     background-color: #f2f3f4;
-    padding: 0 3rem;
-    font-size: 1rem;
+    padding: 0 2rem;
+    font-size: 0.875rem;
     transition: 0.6s;
   }
   .header--menu.show {
@@ -225,7 +225,7 @@ main section {
     transition: 0.6s;
   }
   .header--menu li {
-    padding: 1rem;
+    padding: 0.8rem;
   }
 }
 .header--menu__items > a {
@@ -600,7 +600,7 @@ main section {
 @media only screen and (max-width: 576px) {
   .footer--container .col2 .social-media {
     margin: 0.2rem auto;
-    width: 50%;
+    width: 60%;
     flex-wrap: wrap;
     gap: 1rem;
     padding: 0;
