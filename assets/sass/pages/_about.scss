@@ -94,7 +94,7 @@
                         font-size:2.5rem;
                         color:func.theme-colors("title1");
                         @include mixin.responsive(xs){
-                            font-size: 1.3rem;
+                            font-size: 1.2rem;
                         }
                     }
                 }
@@ -106,7 +106,7 @@
                     color:func.theme-colors("black");
                     line-height:2;
                     @include mixin.responsive(xs){
-                        font-size: 0.875rem;
+                        font-size: 0.7rem;
                         text-indent: 5rem;
                     }
                     .bold{
@@ -131,7 +131,7 @@
                         padding:1rem;
                         @include mixin.responsive(xs){
                             width:100%;
-                            font-size:0.875rem;
+                            font-size:0.7rem;
                         }
                         .details{
                             list-style-type: none;
@@ -162,7 +162,7 @@
                             width:70%;
                             border-radius:1px;
                             @include mixin.responsive(xs){
-                                font-size:1rem;
+                                font-size:0.875rem;
                                 margin:1rem auto;
                                 width:40%;
                             }
@@ -170,7 +170,7 @@
                                 font-size:0.875rem;
                                 color:func.theme-colors("dark");
                                 @include mixin.responsive(xs){
-                                    font-size:0.7rem;
+                                    font-size:0.6rem;
                                 }
                             }
                         }
