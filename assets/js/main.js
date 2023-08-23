@@ -148,83 +148,47 @@ const srtop = ScrollReveal({
 });
 
 /* Home Scroll */
-srtop.reveal(".home--container--text__title", { delay: 200 });
-srtop.reveal(".home--container--text__desc", { delay: 300 });
-srtop.reveal(".home--container--text q", { delay: 400 });
-srtop.reveal(".home--container--text .btn-primary", { delay: 500 });
-srtop.reveal(".home--container--text .social-media", { delay: 600 });
+srtop.reveal(".home--container--text .scroll", { interval: 200 });
 
-srtop.reveal(".home--container--img", { delay: 400 });
+srtop.reveal(".home--container--img", { delay: 300 });
 
 /* About Scroll */
-srtop.reveal(".about--container--title", { delay: 200 });
-srtop.reveal(".about--container--contents .img", { delay: 500 });
-srtop.reveal(".about--container--contents .bio-head", { delay: 300 });
-srtop.reveal(".about--container--contents .bio", { delay: 400 });
-srtop.reveal(".about--container--contents .personal .col1", { delay: 600 });
-srtop.reveal(".about--container--contents .personal .col2 a", { delay: 600 });
-srtop.reveal(".about--container--contents .personal .col2 ", { delay: 500 });
+srtop.reveal(".about--container--title", { delay: 100 });
+srtop.reveal(".about--container--contents .img", { delay: 200 });
+srtop.reveal(".about--container--contents .text .scroll", { interval: 200 });
 
 /* Education Scroll */
-srtop.reveal(".education .title", { delay: 200 });
-srtop.reveal(".education .timeline", { delay: 400 });
-srtop.reveal(".education .timeline .container", { interval: 400 });
+srtop.reveal(".education .title", { delay: 100 });
+srtop.reveal(".education .timeline", { delay: 300 });
+srtop.reveal(".education .timeline .container", { interval: 200 });
 
 /* Skills Scroll */
-srtop.reveal(".skills--container .title-holder .title", { delay: 200 });
-srtop.reveal(".skills--container .title-holder q", { delay: 300 });
-srtop.reveal(".skills--container .skill-holder .skill-set", { delay: 400 });
-srtop.reveal(".skills--container .skill-holder .skill-set .circle", {
-  delay: 200,
-});
-srtop.reveal(".skills--container .skill-holder .frontend .circle", {
-  interval: 300,
-});
-srtop.reveal(".skills--container .skill-holder .backend .circle", {
-  interval: 300,
-});
-srtop.reveal(".skills--container .skill-holder .professional .circle", {
-  interval: 300,
-});
+srtop.reveal(".skills--container .title-holder .scroll", { interval: 200 });
+srtop.reveal(".skills--container .skill-holder .skill-set", { delay: 300 });
+srtop.reveal(".skills--container .skill-holder .circle", { interval: 200 });
 
 /* Experience Scroll */
-srtop.reveal(".experience--container .title", { delay: 200 });
-srtop.reveal(".experience--container .btn-box", { delay: 300 });
-
-srtop.reveal(".experience--container .items ", { delay: 300 });
-srtop.reveal(".experience--container .items .company .role", { delay: 400 });
-srtop.reveal(".experience--container .items .company .c-name", { delay: 500 });
-srtop.reveal(".experience--container .items .company .details", { delay: 600 });
-srtop.reveal(".experience--container .items .company .description", {
-  delay: 700,
+srtop.reveal(".experience--container .title", { delay: 100 });
+srtop.reveal(".experience--container .btn-box", { delay: 200 });
+srtop.reveal(".experience--container .items .company .scrolla", {
+  interval: 200,
 });
-srtop.reveal(".experience--container .items .company .c-website", {
-  delay: 800,
+srtop.reveal(".experience--container .items .company .scrollf", {
+  interval: 200,
 });
 
 /* Projects Scroll */
 
-srtop.reveal(".projects--title", { delay: 200 });
-srtop.reveal(".projects .cards .project-cards", { delay: 300 });
-srtop.reveal(".projects .cards .project-cards .project-img", { delay: 400 });
-srtop.reveal(".projects .cards .project-cards .project-head", { delay: 500 });
-srtop.reveal(".projects .cards .project-cards .abstract", { delay: 600 });
-srtop.reveal(".projects .cards .project-cards .category", { delay: 700 });
-srtop.reveal(".projects .cards .project-cards .card-btn", { delay: 800 });
+srtop.reveal(".projects--title", { delay: 100 });
+srtop.reveal(".projects .cards .project-cards", { delay: 200 });
+srtop.reveal(".projects .cards .project-cards .project-img", { delay: 200 });
+srtop.reveal(".projects .cards .project-cards .scrollo", { interval: 200 });
+srtop.reveal(".projects .cards .project-cards .scrolle", { interval: 200 });
+srtop.reveal(".projects .cards .project-cards .scrollp", { interval: 200 });
 
 /* Contact Scroll */
-srtop.reveal(".contact--title", { delay: 200 });
-srtop.reveal(".contact--info", { delay: 300 });
-srtop.reveal(".contact--info .connect", { delay: 400 });
-srtop.reveal(".contact--info .contact-links", { delay: 500 });
-
-srtop.reveal(".contact--form .img", { delay: 600 });
-
-srtop.reveal(".contact--form .form-elements .form-title", { delay: 600 });
-srtop.reveal(".contact--form .form-elements form .form-group div", {
-  delay: 700,
-});
-srtop.reveal(".contact--form .form-elements form .form-group div", {
-  interval: 50,
-});
-srtop.reveal(".contact--form .form-elements form .button-area", { delay: 700 });
+srtop.reveal(".contact--title", { delay: 100 });
+srtop.reveal(".contact--info", { delay: 200 });
+srtop.reveal(".contact--form .img", { delay: 200 });
+srtop.reveal(".contact--form .form-elements", { delay: 300 });
+srtop.reveal(".contact--form .form-elements", { delay: 300 });

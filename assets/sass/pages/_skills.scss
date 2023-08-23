@@ -123,6 +123,9 @@
                         .mysql{
                             background:func.skill-colors("bar") linear-gradient(to right, transparent 50%,func.skill-colors("color-3") 0);
                         }
+                        .python{
+                            background:func.skill-colors("bar") linear-gradient(to right, transparent 50%,func.skill-colors("color-1") 0);
+                        }
                         .communicate{
                             background:func.skill-colors("bar") linear-gradient(to right, transparent 50%,func.skill-colors("color-1") 0);
                         }
@@ -251,6 +254,10 @@
                             &.mysql::before{
                                 background-color: func.skill-colors("color-3");
                                 transform:rotate(calc(((65 - 50) * 0.01turn )));
+                            }
+                            &.python::before{
+                                background-color: func.skill-colors("bar");
+                                transform:rotate(calc(((1 - 0) * 0.01turn )));
                             }
                             &.communicate::before{
                                 background-color: func.skill-colors("color-1");

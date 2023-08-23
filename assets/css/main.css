@@ -280,7 +280,7 @@ main section {
 }
 .header-fixed {
   position: fixed;
-  top: -1px;
+  top: 0;
   left: 0;
   right: 0;
   width: 100%;
@@ -1422,6 +1422,9 @@ main section {
 .skills--container .skill-holder .skill-set .container .circle .mysql {
   background: #e5e4e2 linear-gradient(to right, transparent 50%, #e4a11b 0);
 }
+.skills--container .skill-holder .skill-set .container .circle .python {
+  background: #e5e4e2 linear-gradient(to right, transparent 50%, #14a44d 0);
+}
 .skills--container .skill-holder .skill-set .container .circle .communicate {
   background: #e5e4e2 linear-gradient(to right, transparent 50%, #14a44d 0);
 }
@@ -1564,6 +1567,10 @@ main section {
 .skills--container .skill-holder .skill-set .container .circle .progress.mysql::before {
   background-color: #e4a11b;
   transform: rotate(0.15turn);
+}
+.skills--container .skill-holder .skill-set .container .circle .progress.python::before {
+  background-color: #e5e4e2;
+  transform: rotate(0.01turn);
 }
 .skills--container .skill-holder .skill-set .container .circle .progress.communicate::before {
   background-color: #14a44d;
